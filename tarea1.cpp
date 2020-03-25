@@ -79,6 +79,7 @@ void inversaMatrix(Matrix matrix_adjunta, Matrix &respuesta){
 	
 	if(determinante == 0){
 		cout << ("El determinante es cero por lo tanto no se puede calcular la matriz inversa");
+        exit (EXIT_FAILURE);
 	}
 	else{
         cofactors(matrix_adjunta, respuesta_cof);
